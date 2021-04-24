@@ -83,11 +83,11 @@ export default Watch(
                         </Link>
                       </NavItem>
                     </Nav>
-                    <Nav className="ml-0 ml-md-2 d-flex align-items-center" navbar>
+                    {/* <Nav className="ml-0 ml-md-2 d-flex align-items-center" navbar>
                       <NavItem className="nav-buttons">
                         <button className="btn btn-light" onClick={this.toggleModal}>Login</button>
                       </NavItem>
-                    </Nav>
+                    </Nav> */}
                   </Collapse>
                 </div>
               </Navbar>
@@ -379,11 +379,11 @@ export default Watch(
                     <h4>Our Social Networks</h4>
                     <p>Follow us at our Social handles to get all the updates.</p>
                     <div className="social-links mt-3">
-                      <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-                      <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-                      <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                      <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                      <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                      <a href="https://twitter.com/AskCodeium" target="_blank" className="twitter"><i className="bx bxl-twitter"></i></a>
+                      <a href="https://www.facebook.com/AskCodeium" target="_blank" className="facebook"><i className="bx bxl-facebook"></i></a>
+                      <a href="#" target="_blank" className="instagram"><i className="bx bxl-instagram"></i></a>
+                      <a href="#" target="_blank" className="google-plus"><i className="bx bxl-skype"></i></a>
+                      <a href="https://www.linkedin.com/company/codeium" target="_blank" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
