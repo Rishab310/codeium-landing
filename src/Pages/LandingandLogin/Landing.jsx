@@ -33,11 +33,11 @@ export default Watch(
           <header id="header" className="fixed-top">
             <div className="container d-flex align-items-center">
               <Navbar dark expand="md" style={{ width: "100%" }}>
-                <div className="container" style={{cursor:"pointer"}}>
+                <div className="container" style={{ cursor: "pointer" }}>
                   <div className="mr-auto" href="/">
                     <h1 className="logo mr-auto">
                       {/* <a className="nav-logo" onClick={this.scrollToTop}>O<span>z</span>one</a> */}
-                      <a className="nav-logo" onClick={this.scrollToTop}><img src="./assets/img/codeium_logo_bg.png" alt="Codeium" width="160px"/></a>
+                      <a className="nav-logo" onClick={this.scrollToTop}><img src="./assets/img/codeium_logo_bg.png" alt="Codeium" width="160px" /></a>
                     </h1>
                   </div>
                   <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
@@ -74,6 +74,16 @@ export default Watch(
                         </Link>
                       </NavItem>
                       <NavItem>
+                        <Link className="nav-link" to="community"
+                          activeClass="active"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}>
+                          Community
+                        </Link>
+                      </NavItem>
+                      <NavItem>
                         <Link className="nav-link" to="contact"
                           activeClass="active"
                           spy={true}
@@ -94,7 +104,7 @@ export default Watch(
               </Navbar>
             </div>
             {/* Login and Sign Up Modal*/}
-            <LoginModal toggleModal={ this.toggleModal} isModalOpen={this.state.isModalOpen} />
+            <LoginModal toggleModal={this.toggleModal} isModalOpen={this.state.isModalOpen} />
           </header><br /><br />
           <section id="hero" className="text-dark">
             <div className="container" data-aos="zoom-out" data-aos-delay="100">
@@ -104,7 +114,12 @@ export default Watch(
                   </h1>
                   <h2>A place to explore the re-defined version of competitive coding..</h2>
                   <div className="d-flex">
-                    <a className="btn-get-started scrollto" style={{ cursor: "pointer" }} onClick={this.toggleModal}>Get Started</a>
+                    {/* <a className="btn-get-started scrollto" style={{ cursor: "pointer" }} onClick={this.toggleModal}>Get Started</a> */}
+                    <Link className="btn-get-started scrollto" style={{ cursor: "pointer" }} to="community"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}>Join us</Link>
                   </div>
                 </div>
                 <div className="col col-12 col-md-4 ">
@@ -161,7 +176,7 @@ export default Watch(
                     data-aos-delay="100">
                     <h3>With us you find a chance to explore the re-defined version of competitive coding.</h3>
                     <p className="font-italic">
-                    We provide you a chance to learn CP and earn coins through :-
+                      We provide you a chance to learn CP and earn coins through :-
                   </p>
                     <ul>
                       <li>
@@ -180,7 +195,7 @@ export default Watch(
                       </li>
                     </ul>
                     <p>
-                    Redeem your coins at our merchandise store to buy some exclusive goodies and avail some bumper discounts.
+                      Redeem your coins at our merchandise store to buy some exclusive goodies and avail some bumper discounts.
                   </p>
                   </div>
                 </div>
@@ -197,7 +212,7 @@ export default Watch(
                     <li>
                       <div>
                         <Accordion.Toggle as={Button} style={{ whiteSpace: "normal", textAlign: "left" }} variant="link" eventKey="0">
-                        Is this platform just for students?
+                          Is this platform just for students?
                       </Accordion.Toggle>
                       </div>
                       <Accordion.Collapse eventKey="0">
@@ -207,7 +222,7 @@ export default Watch(
                     <li>
                       <div>
                         <Accordion.Toggle as={Button} style={{ whiteSpace: "normal", textAlign: "left" }} variant="link" eventKey="1">
-                        How to earn coins through problems and contests?
+                          How to earn coins through problems and contests?
                         </Accordion.Toggle>
                       </div>
                       <Accordion.Collapse eventKey="1">
@@ -218,7 +233,7 @@ export default Watch(
                     <li>
                       <div>
                         <Accordion.Toggle as={Button} style={{ whiteSpace: "normal", textAlign: "left" }} variant="link" eventKey="2">
-                        How and where to redeem coins ?
+                          How and where to redeem coins ?
                         </Accordion.Toggle>
                       </div>
                       <Accordion.Collapse eventKey="2">
@@ -229,7 +244,7 @@ export default Watch(
                     <li>
                       <div>
                         <Accordion.Toggle as={Button} style={{ whiteSpace: "normal", textAlign: "left" }} variant="link" eventKey="3">
-                        Where can I find my collected coins?
+                          Where can I find my collected coins?
                         </Accordion.Toggle>
                       </div>
                       <Accordion.Collapse eventKey="3">
@@ -239,7 +254,7 @@ export default Watch(
                     <li>
                       <div>
                         <Accordion.Toggle as={Button} style={{ whiteSpace: "normal", textAlign: "left" }} variant="link" eventKey="4">
-                        Still didn’t answer your question?
+                          Still didn’t answer your question?
                         </Accordion.Toggle>
                       </div>
                       <Accordion.Collapse eventKey="4">
@@ -250,7 +265,26 @@ export default Watch(
                 </ul>
               </div>
             </section>
-            <section id="contact" className="contact">
+            <section id="community" className="community">
+              <div className="container" data-aos="fade-up">
+                <div className="section-title">
+                  <h3><span>Community</span></h3>
+                  <div className="row pt-5 d-flex hustify-content-center align-items-center">
+                    <div className="col-12 col-md-8 ">
+                      <h5>Join our community and become a member to avail all the benefits !</h5>
+                    </div>
+                    <div className="col-12 col-md-4 ">
+                      <Link className="btn-custom-dark" style={{ cursor: "pointer" }} to="community"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}>Join us</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="contact" className="contact section-bg">
               <div className="container" data-aos="fade-up">
                 <div className="section-title">
                   <h3><span>Contact Us</span></h3>
@@ -322,15 +356,16 @@ export default Watch(
               </div>
             </section>
           </main>
+          <br/><br/><br/>
           <footer id="footer">
             <section className="footer-top">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-3 col-md-6 footer-contact">
                     {/* <h2>O<span style={{ color: "#f0c017" }}>z</span>one</h2> */}
-                    <h2 className="font-weight-bold codeium-head" style={{ color: "#003d7e"}}>Codeium</h2>
-                    <p>  
-                    83, Shree Ji Park Colony,<br />
+                    <h2 className="font-weight-bold codeium-head" style={{ color: "#003d7e" }}>Codeium</h2>
+                    <p>
+                      83, Shree Ji Park Colony,<br />
                     Mandsaur, Madhya Pradesh,<br />
                     PIN-458001 <br /><br />
                       <strong>Phone:</strong> +91 9406608047<br />
@@ -369,7 +404,7 @@ export default Watch(
                             smooth={true}
                             offset={-70}
                             duration={500}>
-                          F.A.Q
+                            F.A.Q
                         </Link>
                         </a>
                       </li>
