@@ -36,7 +36,8 @@ export default Watch(
                 <div className="container" style={{cursor:"pointer"}}>
                   <div className="mr-auto" href="/">
                     <h1 className="logo mr-auto">
-                      <a className="nav-logo" onClick={this.scrollToTop}>O<span>z</span>one</a>
+                      {/* <a className="nav-logo" onClick={this.scrollToTop}>O<span>z</span>one</a> */}
+                      <a className="nav-logo" onClick={this.scrollToTop}><img src="./assets/img/codeium_logo_bg.png" alt="Codeium" width="160px"/></a>
                     </h1>
                   </div>
                   <NavbarToggler onClick={this.toggleNavbar} className="ml-auto" />
@@ -99,7 +100,7 @@ export default Watch(
             <div className="container" data-aos="zoom-out" data-aos-delay="100">
               <div className="row">
                 <div className="col col-12 col-md-8">
-                  <h1>Welcome to <span>Ozone</span>
+                  <h1>Welcome to <span className="codeium-head">Codeium</span>
                   </h1>
                   <h2>A place to explore the re-defined version of competitive coding..</h2>
                   <div className="d-flex">
@@ -262,21 +263,21 @@ export default Watch(
                         <div className="info-box mb-4">
                           <i className="bx bx-map"></i>
                           <h3>Our Address</h3>
-                          <p>A108 Adam Street, New York, NY 535022</p>
+                          <p>83, Shree Ji Park Colony, Mandsaur, Madhya Pradesh, PIN-458001</p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-12">
                         <div className="info-box  mb-4">
                           <i className="bx bx-envelope"></i>
                           <h3>Email Us</h3>
-                          <p>contact@example.com</p>
+                          <p>contact@codeium.tech</p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-12">
                         <div className="info-box  mb-4">
                           <i className="bx bx-phone-call"></i>
                           <h3>Call Us</h3>
-                          <p>+1 5589 55488 55</p>
+                          <p>+91 9406608047</p>
                         </div>
                       </div>
                     </div>
@@ -326,13 +327,14 @@ export default Watch(
               <div className="container">
                 <div className="row">
                   <div className="col-lg-3 col-md-6 footer-contact">
-                    <h2>O<span style={{ color: "#f0c017" }}>z</span>one</h2>
-                    <p>
-                    A108 Adam Street <br />
-                    New York, NY 535022<br />
-                    United States <br /><br />
-                      <strong>Phone:</strong> +1 5589 55488 55<br />
-                      <strong>Email:</strong> info@example.com<br />
+                    {/* <h2>O<span style={{ color: "#f0c017" }}>z</span>one</h2> */}
+                    <h2 className="font-weight-bold codeium-head" style={{ color: "#003d7e"}}>Codeium</h2>
+                    <p>  
+                    83, Shree Ji Park Colony,<br />
+                    Mandsaur, Madhya Pradesh,<br />
+                    PIN-458001 <br /><br />
+                      <strong>Phone:</strong> +91 9406608047<br />
+                      <strong>Email:</strong> contact@codeium.tech<br />
                     </p>
                   </div>
                   <div className="col-lg-3 col-md-6 footer-links">
@@ -381,8 +383,8 @@ export default Watch(
                     <div className="social-links mt-3">
                       <a href="https://twitter.com/AskCodeium" target="_blank" className="twitter"><i className="bx bxl-twitter"></i></a>
                       <a href="https://www.facebook.com/AskCodeium" target="_blank" className="facebook"><i className="bx bxl-facebook"></i></a>
-                      <a href="#" target="_blank" className="instagram"><i className="bx bxl-instagram"></i></a>
-                      <a href="#" target="_blank" className="google-plus"><i className="bx bxl-skype"></i></a>
+                      {/* <a href="#" target="_blank" className="instagram"><i className="bx bxl-instagram"></i></a>
+                      <a href="#" target="_blank" className="google-plus"><i className="bx bxl-skype"></i></a> */}
                       <a href="https://www.linkedin.com/company/codeium" target="_blank" className="linkedin"><i className="bx bxl-linkedin"></i></a>
                     </div>
                   </div>
