@@ -274,11 +274,7 @@ export default Watch(
                       <h5>Join our community and become a member to avail all the benefits !</h5>
                     </div>
                     <div className="col-12 col-md-4 ">
-                      <Link className="btn-custom-dark" style={{ cursor: "pointer" }} to="community"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}>Join us</Link>
+                      <a className="btn-custom-dark" style={{ cursor: "pointer" }} href="https://forms.gle/KmaUeZ43Hzky1aHf6" target="_blank">Join us</a>
                     </div>
                   </div>
                 </div>
