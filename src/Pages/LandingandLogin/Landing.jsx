@@ -133,16 +133,16 @@ export default Watch(
               <div className="container" data-aos="zoom-in" data-aos-delay="300">
                 <div className="row d-flex justify-content-around">
                   <div className="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <a href="">
+                    <RouterLink to="/comingsoon">
                       <div className="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div className="icon"><i className="bx bx-file"></i></div>
                         <h4 className="title">Practice CP</h4>
                         <p className="description">Check out some practice problems to boost your competitive coding skills.</p>
                       </div>
-                    </a>
+                    </RouterLink>
                   </div>
                   <div className="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <RouterLink to="/contests">
+                    <RouterLink to="/comingsoon">
                       <div className="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div className="icon"><i className="bx bx-world"></i></div>
                         <h4 className="title">Contests</h4>
@@ -151,13 +151,13 @@ export default Watch(
                     </RouterLink>
                   </div>
                   <div className="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <a href="">
+                    <RouterLink to="/comingsoon">
                       <div className="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div className="icon"><i className="bx bx-store"></i></div>
                         <h4 className="title">Merchandise Store</h4>
                         <p className="description">Check out our store for some exclusive goodies.</p>
                       </div>
-                    </a>
+                    </RouterLink>
                   </div>
                 </div>
               </div>

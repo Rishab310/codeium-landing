@@ -5,6 +5,7 @@ import {Route, Switch,Redirect} from 'react-router-dom';
 import ProtectedRoute from './Pages/LandingandLogin/ProtectedRoute';
 import Contests from './Pages/ContestList/ContestPage';
 import Problemlist from './Pages/ProblemList/ProblemList';
+import ComingSoon from './Pages/ComingSoon/ComingSoon';
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class App extends Component {
         <Route exact path="/" component={Landing} />
         {/* <Route path="/contests" exact component={Contests} /> */}
         {/* <Route path="/problems" exact component={Problemlist} /> */}
+        <Route exact path="/comingsoon" exact component={ComingSoon} />
         {/* <Redirect to="/contests" /> */}
         <Redirect to="/" />
       </Switch>
