@@ -6,6 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, Collapse } from "reactstrap";
 import { Accordion, Button } from 'react-bootstrap';
 import LoginModal from "../../components/LoginModal";
+import ContactForm from "../../components/ContactForm";
 import { Link as RouterLink } from 'react-router-dom';
 export default Watch(
   class Landing extends Component {
@@ -315,36 +316,7 @@ export default Watch(
                   <div className="col-12 col-md-6">
                     <div className="row d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
                       <div className="col-12">
-                        <form action="" method="post" role="form" className="email-contact-form">
-                          <div className="form-row">
-                            <div className="col form-group">
-                              <input type="text" name="name" className="form-control" id="name" placeholder="Your Name"
-                                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                              <div className="validate"></div>
-                            </div>
-                            <div className="col form-group">
-                              <input type="email" className="form-control" name="email" id="email" placeholder="Your Email"
-                                data-rule="email" data-msg="Please enter a valid email" />
-                              <div className="validate"></div>
-                            </div>
-                          </div>
-                          <div className="form-group">
-                            <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject"
-                              data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div className="validate"></div>
-                          </div>
-                          <div className="form-group">
-                            <textarea className="form-control" name="message" rows="5" data-rule="required"
-                              data-msg="Please write something for us" placeholder="Message"></textarea>
-                            <div className="validate"></div>
-                          </div>
-                          <div className="mb-3">
-                            <div className="loading">Loading</div>
-                            <div className="error-message"></div>
-                            <div className="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div className="text-center"><button style={{ cursor: "pointer" }} type="submit">Send Message</button></div>
-                        </form>
+                        <ContactForm />
                       </div>
                     </div>
                   </div>
@@ -352,7 +324,7 @@ export default Watch(
               </div>
             </section>
           </main>
-          <br/><br/><br/>
+          <br /><br /><br />
           <footer id="footer">
             <section className="footer-top">
               <div className="container">
