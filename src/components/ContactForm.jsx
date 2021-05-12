@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import {Form, FormGroup} from "reactstrap";
+import {Form, FormGroup ,FormFeedback} from "reactstrap";
 import axios from 'axios';
 
 class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      contactMessage: "",
+      sent:false,
       contactState:"",
       contactUs: {
         "name": '',
@@ -38,15 +39,16 @@ class ContactForm extends Component {
       try {
         const res = await axios.post(`http://104.211.91.225:5000/contact`, contactData);
         if (res.data.status === 200) {
-          alert("Response Sent Succesfully");
+          this.setState({ sent: true, contactMessage: "Response Sent Succesfully !!" });
+          // alert("");
         }
         else {
-          this.setState({ signUpError: res.data.msg });
-          alert("Error : " +res.data.msg)
+          this.setState({sent:false, contactMessage: res.data.msg });
+          // alert("Error : " +res.data.msg)
         }
       } catch (err) {
-        this.setState({ signUpError: "Please, try again later!!" });
-        alert("Please, try again later!!")
+        this.setState({ sent: false, contactMessage: "Please, try again later!!" });
+        // alert("Please, try again later!!")
       }
     };
     sendPostRequest();
@@ -77,6 +79,9 @@ class ContactForm extends Component {
             <textarea className="form-control" name="message" rows="5" placeholder="Message" required
               value={this.state.contactUs.message} onChange={this.handleContactChange}
             ></textarea>
+          </FormGroup>
+          <FormGroup className="text-center">
+            <FormFeedback className="d-block text-center" valid={this.state.sent}>{this.state.contactMessage}</FormFeedback>
           </FormGroup>
           <div className="mb-3">
             <div className="loading">Loading</div>

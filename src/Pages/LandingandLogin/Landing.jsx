@@ -33,8 +33,8 @@ export default Watch(
         <div className="">
           <header id="header" className="fixed-top">
             <div className="container d-flex align-items-center">
-              <Navbar dark expand="md" style={{ width: "100%" }}>
-                <div className="container" style={{ cursor: "pointer" }}>
+              <Navbar dark expand="md" style={{ width: "100%" }} className="px-md-0">
+                <div className="container px-md-0" style={{ cursor: "pointer" }}>
                   <div className="mr-auto" href="/">
                     <h1 className="logo mr-auto">
                       {/* <a className="nav-logo" onClick={this.scrollToTop}>O<span>z</span>one</a> */}
@@ -167,7 +167,7 @@ export default Watch(
               <div className="container" data-aos="fade-up">
                 <div className="section-title">
                   <h3>Find Out More <span>About Us</span></h3>
-                  <p>Ozone was initiated with a mission to help students learn competitive coding along with some exciting monetary rewards.</p>
+                  <p>Codeium was initiated with a mission to help students learn competitive coding along with some exciting monetary rewards.</p>
                 </div>
                 <div className="row">
                   <div className="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
@@ -190,7 +190,7 @@ export default Watch(
                       <li>
                         <i className="bx bx-images"></i>
                         <div>
-                          <h5>Regular Contests</h5>
+                          <h5>Fantasy Contests</h5>
                           <p>Earn special coins on the basis of your contest rank.</p>
                         </div>
                       </li>
@@ -266,15 +266,29 @@ export default Watch(
                 </ul>
               </div>
             </section>
-            <section id="community" className="community">
+            <section id="community" className="community section-bg bg-white">
               <div className="container" data-aos="fade-up">
                 <div className="section-title">
-                  <h3><span>Community</span></h3>
-                  <div className="row pt-5 d-flex hustify-content-center align-items-center">
-                    <div className="col-12 col-md-8 ">
-                      <h5>Join our community and become a member to avail all the benefits !</h5>
+                  <h3>Collaboration with <span> Communities </span> and <span>Clubs</span></h3>
+                  <p>Get a chance to organize fantasy contests in your community.</p>
+                  {/* <div className="row pt-3 d-flex hustify-content-center align-items-center">
+                    <div className="col-12">
+                      <h5>Get a chance to organize fantasy contests in your community.</h5>
                     </div>
-                    <div className="col-12 col-md-4 ">
+                  </div> */}
+                </div>
+                <div className="row">
+                  <div className="col-lg-6 order-lg-last d-flex flex-column justify-content-center" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="assets/img/community2.jpeg" className="img-fluid mx-auto" alt="" width="100%" style={{maxWidth:"400px"}}/>
+                  </div>
+                  <div className="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <h3>Partnership with Communities</h3>
+                    <p>We invite all the tech communities/clubs to join us and get a chance to organize fantasy contests in your community.</p>
+                    <p> If you believe in taking a chance to experience something different in the traditional art of coding then we are ready to collaborate with you.</p>
+                    <p>Not only will you be able to conduct fantasy contests in your college but also avail a chance to get a shout out on our merchandise.</p>
+                    <p>Many such benefits are awaiting for you. Join us now!</p>
+                    <div className="">
                       <a className="btn-custom-dark" style={{ cursor: "pointer" }} href="https://forms.gle/KmaUeZ43Hzky1aHf6" target="_blank">Join us</a>
                     </div>
                   </div>
@@ -376,8 +390,8 @@ export default Watch(
                         </Link>
                         </a>
                       </li>
-                      <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                      <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                      <li><i className="bx bx-chevron-right"></i><a><RouterLink to="/termsofservice">Terms of service</RouterLink> </a></li>
+                      <li><i className="bx bx-chevron-right"></i> <a href="#"><RouterLink to="/privacypolicy">Privacy policy</RouterLink></a></li>
                     </ul>
                   </div>
                   <div className="col-lg-3 col-md-6 footer-links ml-auto">
