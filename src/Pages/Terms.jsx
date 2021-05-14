@@ -205,7 +205,46 @@ class TermsOfService extends Component {
             </div>
           </div>
         </section>
-        
+        <footer id="footer">
+          <section className="footer-top">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-3 col-md-6 footer-contact">
+                  {/* <h2>O<span style={{ color: "#f0c017" }}>z</span>one</h2> */}
+                  <h2 className="font-weight-bold codeium-head" style={{ color: "#003d7e" }}>Codeium</h2>
+                  <p>
+                    83, Shree Ji Park Colony,<br />
+                    Mandsaur, Madhya Pradesh,<br />
+                    PIN-458001 <br /><br />
+                    <strong>Phone:</strong> +91 9406608047<br />
+                    <strong>Email:</strong> contact@codeium.tech<br />
+                  </p>
+                </div>
+                <div className="col-lg-3 col-md-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><i className="bx bx-chevron-right"></i><RouterLink to="/">Home</RouterLink></li>
+                    <li><i className="bx bx-chevron-right"></i><RouterLink to="/">About us</RouterLink></li>
+                    <li><i className="bx bx-chevron-right"></i><RouterLink to="/">F.A.Q</RouterLink></li>
+                    <li><i className="bx bx-chevron-right"></i><RouterLink to="/termsofservice">Terms of service</RouterLink></li>
+                    <li><i className="bx bx-chevron-right"></i><RouterLink to="/privacypolicy">Privacy policy</RouterLink></li>
+                  </ul>
+                </div>
+                <div className="col-lg-3 col-md-6 footer-links ml-auto">
+                  <h4>Our Social Networks</h4>
+                  <p>Follow us at our Social handles to get all the updates.</p>
+                  <div className="social-links mt-3">
+                    <a href="https://twitter.com/AskCodeium" target="_blank" className="twitter"><i className="bx bxl-twitter"></i></a>
+                    <a href="https://www.facebook.com/AskCodeium" target="_blank" className="facebook"><i className="bx bxl-facebook"></i></a>
+                    {/* <a href="#" target="_blank" className="instagram"><i className="bx bxl-instagram"></i></a>
+                      <a href="#" target="_blank" className="google-plus"><i className="bx bxl-skype"></i></a> */}
+                    <a href="https://www.linkedin.com/company/codeium" target="_blank" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </footer>
       </div>
     );
   }
