@@ -65,16 +65,6 @@ export default Watch(
                         </Link>
                       </NavItem>
                       <NavItem>
-                        <Link className="nav-link" to="faq"
-                          activeClass="active"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration={500}>
-                          F.A.Q
-                        </Link>
-                      </NavItem>
-                      <NavItem>
                         <Link className="nav-link" to="community"
                           activeClass="active"
                           spy={true}
@@ -82,6 +72,16 @@ export default Watch(
                           offset={-70}
                           duration={500}>
                           Community
+                        </Link>
+                      </NavItem>
+                      <NavItem>
+                        <Link className="nav-link" to="faq"
+                          activeClass="active"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}>
+                          F.A.Q
                         </Link>
                       </NavItem>
                       <NavItem>
