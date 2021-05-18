@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Form, FormGroup ,FormFeedback} from "reactstrap";
+import { Form, FormGroup, FormFeedback } from "reactstrap";
 import axios from 'axios';
 
 class ContactForm extends Component {
@@ -7,8 +7,8 @@ class ContactForm extends Component {
     super(props);
     this.state = {
       contactMessage: "",
-      sent:false,
-      contactState:"",
+      sent: false,
+      contactState: "",
       contactUs: {
         "name": '',
         "email": '',
@@ -37,13 +37,13 @@ class ContactForm extends Component {
     const contactData = this.state.contactUs;
     const sendPostRequest = async () => {
       try {
-        const res = await axios.post(`http://104.211.91.225:5000/contact`, contactData);
+        const res = await axios.post(`https://server.codeium.tech/contact`, contactData);
         if (res.data.status === 200) {
           this.setState({ sent: true, contactMessage: "Response Sent Succesfully !!" });
           // alert("");
         }
         else {
-          this.setState({sent:false, contactMessage: res.data.msg });
+          this.setState({ sent: false, contactMessage: res.data.msg });
           // alert("Error : " +res.data.msg)
         }
       } catch (err) {
@@ -66,7 +66,7 @@ class ContactForm extends Component {
             </FormGroup>
             <FormGroup className="col form-group">
               <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required
-                value={this.state.contactUs.email} onChange={this.handleContactChange}/>
+                value={this.state.contactUs.email} onChange={this.handleContactChange} />
             </FormGroup>
           </div>
           <FormGroup>

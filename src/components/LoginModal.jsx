@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import { Nav, NavItem, Modal, ModalBody, NavLink, TabContent, TabPane, Form, FormGroup, Label, Input, FormFeedback } from "reactstrap";
 import axios from 'axios';
 import auth from "./auth";
@@ -101,7 +101,7 @@ class LoginModal extends Component {
     const loginData = this.state.userLogin;
     const sendPostRequest = async () => {
       try {
-        const res = await axios.post(`http://104.211.91.225:5000/login`, loginData);
+        const res = await axios.post(`https://server.codeium.tech/login`, loginData);
         if (res.data.status === 200) {
           auth.login(() => {
             auth.createUser(loginData.username);
@@ -125,7 +125,7 @@ class LoginModal extends Component {
     const signUpData = this.state.userSignUp;
     const sendPostRequest = async () => {
       try {
-        const res = await axios.post(`http://104.211.91.225:5000/register`, signUpData);
+        const res = await axios.post(`https://server.codeium.tech/register`, signUpData);
         if (res.data.status === 200) {
           auth.login(() => {
             auth.createUser(signUpData.username);
